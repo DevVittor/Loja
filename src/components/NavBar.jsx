@@ -1,5 +1,8 @@
 import { Link, Outlet } from 'react-router-dom';
 import '../App.css';
+
+import Logo from '../assets/Tcell.png';
+
 export default function NavBar(){
     return(
         <>
@@ -10,8 +13,8 @@ export default function NavBar(){
                 md:pt-[5px] md:pb-[5px] md:pr-[10px] md:pl-[10px]
                 pb-[15px] pt-[15px]
                 ">
-                    <div className="">
-                        <Link to="/"><h1 className="font-semibold text-black text-[44px]">Tcell</h1></Link>
+                    <div className="flex items-center gap-2 pb-1">
+                        <Link to="/"><img className='h-[80px]' src={Logo} alt="" /></Link>
                     </div>
                     <div className="">
                         <ul className="flex items-center justify-center flex-wrap gap-3">
