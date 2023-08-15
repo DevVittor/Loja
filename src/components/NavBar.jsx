@@ -4,7 +4,12 @@ export default function NavBar(){
     return(
         <>
             <header className='sticky top-0 border-b border-gray-100 bg-white z-50'>
-                <div className="flex 2xl:flex-row lg:flex-row md:flex-col flex-col flex-wrap items-center justify-between pt-[10px] pb-[10px] pr-[50px] pl-[50px]">
+                <div className="flex 2xl:flex-row lg:flex-row md:flex-col flex-col flex-wrap items-center justify-between 
+                2xl:pt-[10px] 2xl:pb-[10px] 2xl:pr-[50px] 2xl:pl-[50px]
+                lg:pt-[8px] lg:pb-[8px] lg:pr-[25px] lg:pl-[25px]
+                md:pt-[5px] md:pb-[5px] md:pr-[10px] md:pl-[10px]
+                pb-[15px] pt-[15px]
+                ">
                     <div className="">
                         <Link to="/"><h1 className="font-semibold text-black text-[44px]">Tcell</h1></Link>
                     </div>
