@@ -17,7 +17,7 @@ export default function NavBar(){
                         <Link to="/"><img className='h-[80px]' src={Logo} alt="" /></Link>
                     </div>
                     <div className="">
-                        <ul className="flex items-center justify-center flex-wrap gap-3">
+                        <ul className="flex items-center justify-center flex-wrap gap-3 font-normal">
                             <li><Link to="/">Início</Link></li>
                             <li><Link to="loja">Loja</Link></li>
                             <li><Link to="ProdutosDigitais">Produtos Digitais</Link></li>
@@ -32,7 +32,41 @@ export default function NavBar(){
             </header>
                 <Outlet/>
             <footer>
-                <span>Direitos Reservados</span>
+                <section>
+                    <div className="flex flex-col bg-black justify-center items-center gap-4 pt-5 pr-3 pl-3">
+                        <div className="">
+                            <ul className='flex items-center gap-3 text-white text-xl'>
+                                <li><Link><i className="bi bi-facebook"></i></Link></li>
+                                <li><Link><i className="bi bi-instagram"></i></Link></li>
+                                <li><Link><i className="bi bi-twitter"></i></Link></li>
+                                <li><Link><i className="bi bi-youtube"></i></Link></li>
+                            </ul>
+                        </div>
+                        <div className='pr-[20px] pl-[20px] pb-[5px] pt-[5px] rounded-[3px] bg-white'>
+                            <Link  to="/"><img className='h-[80px]' src={Logo} alt="" /></Link>
+                        </div>
+                        <div className="flex flex-col gap-3">
+                            <div className="">
+                                <ul className="flex items-center justify-center flex-wrap gap-3 text-white font-normal">
+                                    <li><Link to="/">Início</Link></li>
+                                    <li><Link to="loja">Loja</Link></li>
+                                    <li><Link to="ProdutosDigitais">Produtos Digitais</Link></li>
+                                    <li><Link to="LinksUteis">Links Úteis</Link></li>
+                                    <li><Link to="Arquivos">Arquivos</Link></li>
+                                    <li><Link to="ProtecaoVeicular">Proteção Veicular</Link></li>
+                                    <li><Link to="Manutencao">Manutenção</Link></li>
+                                    <li><Link to="Sobre">Sobre</Link></li>
+                                </ul>
+                            </div>
+                            <div className="flex justify-center">
+                                <span className='uppercase text-white font-normal '>TCELL &copy; 2022 - TODOS OS DIREITOS RESERVADOS.</span>
+                            </div>
+                        </div>
+                        <div className="">
+                            <Link><button className='text-white font-semibold pb-3 pt-3 rounded-t-xl pr-5 pl-5 bg-[#FE0000]'>Desenvolvido por Fonserra</button></Link>
+                        </div>
+                    </div>
+                </section>
             </footer>
         </>
     )
