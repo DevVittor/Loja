@@ -58,7 +58,7 @@ export default function NavBar(){
                                     <li><Link to="Sobre">Sobre</Link></li>
                                 </ul>
                             </div>
-                            <div className="flex justify-center">
+                            <div className="flex justify-center items-center text-center">
                                 <span className='uppercase text-white font-normal '>TCELL &copy; 2022 - TODOS OS DIREITOS RESERVADOS.</span>
                             </div>
                         </div>
