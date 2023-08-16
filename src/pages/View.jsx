@@ -59,11 +59,6 @@ export default function View(){
             <section>
                 <div className="flex gap-3 flex-wrap pt-3 pb-6 pr-3 pl-3">
                     <Semelhante/>
-                    <Semelhante/>
-                    <Semelhante/>
-                    <Semelhante/>
-                    <Semelhante/>
-                    <Semelhante/>
                 </div>
             </section>
         </main>
