@@ -11,6 +11,7 @@ import ProtecaoVeicular from './pages/ProtecaoVeicular';
 import Manutencao from './pages/Manutencao'
 import Sobre from './pages/Sobre';
 import NoPage from './pages/NoPage';
+import View from './pages/View';
 
 export default function App() {
 
@@ -26,6 +27,7 @@ export default function App() {
           <Route path="protecaoveicular" element={<ProtecaoVeicular />} />
           <Route path="manutencao" element={<Manutencao />} />
           <Route path="sobre" element={<Sobre />} />
+          <Route path="product/:id" element={<View />} />
           <Route path="*" element={<NoPage />} />
         </Route>
       </Routes>

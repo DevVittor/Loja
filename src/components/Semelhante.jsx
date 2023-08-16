@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-export default function Product(){
+export default function Semelhante(){
     return (
         <Link to="product/1">
             <div className="flex flex-col justify-center items-center w-auto">
